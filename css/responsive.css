@@ -1,0 +1,418 @@
+:root {
+  --darkBlue: #5755fe;
+  --whiteColor: white;
+  --lightBlue: #8b93ff;
+  --pinkish: #ff71cd;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* light-shade - #FFF7FC - rgb(255,247,252)
+light-blue - #8B93FF - rgb(139,147,255)
+dark-blue - #5755FE - rgb(87,85,254)
+pink - #FF71CD - rgb(255,113,205) */
+
+/* navigation section starts here  */
+
+@media only screen and (max-width: 56.25em) {
+  .navigation__button {
+    top: 4rem;
+    right: 4rem;
+  }
+  .navigation__background {
+    top: 4.5rem;
+    right: 4.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .navigation__button {
+    top: 3rem;
+    right: 3rem;
+  }
+  .caption-div h1 {
+    font-size: 3.5rem;
+  }
+  .caption-div span {
+    margin-left: 3rem;
+  }
+  .navigation__background {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
+}
+@media (max-width: 40rem) {
+  .navigation__link:link,
+  .navigation__link:visited {
+    font-size: 2rem;
+  }
+}
+
+/* navigation section ends here  */
+
+/* header section starts here  */
+@supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) or
+  (-webkit-clip-path: polygon(0 0)) {
+  .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  only screen and (min-width: 125em) {
+  .header {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right bottom,
+        from(rgba(139, 147, 255, 0.8)),
+        to(rgba(87, 85, 254, 0.8))
+      ),
+      url(../img/hero.jpg);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(139, 147, 255, 0.8),
+        rgba(87, 85, 254, 0.8)
+      ),
+      url(../img/hero.jpg);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--main {
+    letter-spacing: 1rem;
+ 
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: 0.5rem;
+  }
+}
+
+@media (max-width: 80rem) {
+  .heading-primary--main {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .heading-primary--main {
+    margin-top: 100px;
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif !important;
+  }
+  .heading-primary--sub {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif !important;
+  }
+}
+
+/* header section ends here  */
+
+/* caption section strats here  */
+@media (max-width: 102.4rem) {
+  .caption-div h1 {
+    font-size: 7rem;
+  }
+  .caption-bg-image {
+    height: 60vh;
+  }
+  .caption-section {
+    top: 70px;
+  }
+}
+@media (max-width: 80rem) {
+  .caption-div h1 {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 40rem) {
+  .caption-div h1 {
+    margin-top: 50px;
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif !important;
+  }
+}
+
+/* caption section ends here  */
+
+/* Works section in home page  */
+@media (max-width: 102.4rem) {
+  .home-work-section {
+    padding: 8% 0;
+  }
+  .card-container {
+    flex-wrap: nowrap;
+  }
+  .card-img-top {
+    width: 250px;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 80rem) {
+  /* .card-img-top {
+    width: 200px;
+  } */
+  .home-work-section {
+    padding-bottom: 10%;
+  }
+}
+@media (max-width: 40rem) {
+  .home-work-section {
+    clip-path: polygon(0 13vh, 100% 0, 100% 95%, 0 100%);
+    -webkit-clip-path: polygon(0 13vh, 100% 0, 100% 95%, 0 100%);
+  }
+  .home-work-section > a.btn {
+    margin-top: -90px;
+  }
+  .card-container .card:first-child,
+  .work-section > h3 {
+    margin-top: -120px;
+  }
+  .home-work-section > h2 {
+    font-size: 3rem;
+    margin-top: 100px;
+  }
+  .card-container {
+    flex-flow: column nowrap;
+  }
+  .card-img-top {
+    width: 100%;
+    object-fit: cover;
+  }
+  .card-container .card {
+    width: 80%;
+    margin: 0 auto 30px;
+  }
+  .popup video {
+    width: 100%;
+  }
+  .popup__close:link,
+  .popup__close:visited {
+    z-index: 100;
+  }
+}
+/* work section in home page ends here  */
+
+/* Team section slick starts here  */
+@media (max-width: 102.4rem) {
+  .home-team-div {
+    height: 60vh;
+    clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 90%);
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 90%);
+  }
+  .home-team-div h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 40rem) {
+  .home-team-section > h2 {
+    font-size: 3rem;
+    margin-top: 90px;
+  }
+  .home-team-div {
+    width: 100%;
+  }
+}
+
+/* contact us section in home page  */
+
+@media (max-width: 40rem) {
+  .book__form {
+    padding: 1rem;
+  }
+}
+
+/* footer section starts here  */
+
+@media (max-width: 40rem) {
+  .footer-section {
+    height: fit-content;
+    -webkit-clip-path: polygon(0 12vh, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 12vh, 100% 0, 100% 100%, 0 100%);
+  }
+  .footer_links {
+    flex-flow: column nowrap;
+    gap: 20px;
+  }
+  .footer_copyright p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* contact us page - mobile responsiveness  */
+@media (max-width: 40rem) {
+  .contact-us-section {
+    -webkit-clip-path: polygon(0 12vh, 100% 0, 100% 95%, 0 100%) !important;
+    clip-path: polygon(0 12vh, 100% 0, 100% 95%, 0 100%) !important;
+  }
+  .contact-text {
+    font-size: 2.5rem !important;
+  }
+  .contact-us-container {
+    display: block;
+  }
+  .contact-address-container {
+    width: 100% !important;
+    margin: 1rem;
+    margin-left: -1rem;
+  }
+  .form-container > input,
+  .form-container textarea {
+    width: 80%;
+  }
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100% !important;
+    gap: 1rem;
+    background-color: var(--boxBgColor);
+    border-radius: 0.2rem;
+    box-shadow: 3px 3px 7px black;
+  }
+  .form-container button {
+    width: fit-content;
+  }
+}
+@media (max-width: 80rem) {
+  .contact-us-section {
+    -webkit-clip-path: polygon(0 5vh, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 5vh, 100% 0, 100% 90%, 0 100%);
+  }
+  .contact-us-container {
+    padding: 1rem;
+  }
+  .contact-address-container {
+    width: min-content;
+  }
+  .form-container {
+    width: 45%;
+  }
+}
+
+/* services page  */
+
+@media only screen and (max-width: 56.25em) {
+  .section-stories {
+    padding: 10rem 0;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .u-margin-bottom-big {
+    margin-bottom: 5rem !important;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .row [class^="col-"] {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .story {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .story {
+    -webkit-transform: skewX(0);
+    transform: skewX(0);
+  }
+}
+@supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) or
+  (-webkit-clip-path: polygon(0 0)) {
+  .story__shape {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    border-radius: none;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .story__shape {
+    -webkit-transform: translateX(-3rem) skewX(0);
+    transform: translateX(-3rem) skewX(0);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .story__text {
+    -webkit-transform: skewX(0);
+    transform: skewX(0);
+  }
+}
+
+@media (max-width: 40rem) {
+  .heading-tertiary {
+    margin-top: 10px;
+  }
+  .section-stories {
+    clip-path: polygon(0 10vh, 100% 0, 100% 96%, 0 100%);
+    -webkit-clip-path: polygon(0 10vh, 100% 0, 100% 96%, 0 100%);
+  }
+}
+
+/* services section ends here  */
+
+/* branding page starts here  */
+@media (max-width: 102.4rem) {
+  .single-team-div-container .img-div {
+    width: 30rem;
+  }
+}
+@media (max-width: 40rem) {
+  .team-section {
+    clip-path: polygon(0 10vh, 100% 0, 100% 97%, 0 100%);
+    -webkit-clip-path: polygon(0 10vh, 100% 0, 100% 97%, 0 100%);
+  }
+}
+
+/* work page starts here  */
+@media (max-width: 40rem) {
+  .gallery {
+    display: block;
+  }
+}
