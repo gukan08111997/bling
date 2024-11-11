@@ -1,20 +1,20 @@
 /* colours code  */
 
-/* light-shade - #FFF7FC - rgb(255,247,252)
-light-blue - #8B93FF - rgb(139,147,255)
-dark-blue - #5755FE - rgb(87,85,254)
-pink - #FF71CD - rgb(255,113,205)
+/* light-blue - #E9F1FA - rgb(233, 241, 250,0.8)
+bright-blue - #00ABE4 - rgb(0, 171, 228,0.8)
+white - #FFFFFF - rgb(255,255,255)
 grey - rgba(245,245,245,1.00) */
 
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 
 :root{
   --darkBlue:#5755FE;
+  --brightBlue:#00ABE4;
   --whiteColor:white;
-  --lightBlue:#8B93FF;
+  --lightBlue:#E9F1FA;
   --pinkish:#FF71CD;
+  --darkWord:#1e375a;
 }
-
 
 /* animations definition starts here  */
 @-webkit-keyframes moveInLeft {
@@ -147,6 +147,7 @@ body {
   box-sizing: border-box;
   padding: 3rem;
   background-color: #f5f5f5;
+  color: var(--darkWord);
 }
 
 #section{
@@ -184,7 +185,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: linear-gradient(0.45turn, var(--lightBlue), var(--darkBlue));
+  background-image: linear-gradient(0.45turn, var(--lightBlue), var(--brightBlue));
   z-index: 1000;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -244,7 +245,7 @@ body {
 .navigation__link:hover,
 .navigation__link:active {
   background-position: 100%;
-  color: var(--darkBlue);
+  color: var(--brightBlue);
   -webkit-transform: translateX(1rem);
   transform: translateX(1rem);
   font-weight: 900;
@@ -312,14 +313,14 @@ body {
       linear,
       left top,
       right bottom,
-      from(rgba(38, 172, 177, 0.8)),
-      to(rgba(46, 118, 169, 0.8))
+      from(rgba(233, 241, 250, 0.8)),
+      to(rgba(0, 171, 228, 0.8))
     ),
     url(../images/maintenance\ and\ repair.jpg);
   background-image: linear-gradient(
       to right bottom,
-      rgba(38, 172, 177, 0.8),
-      rgba(46, 118, 169, 0.8)
+      rgba(233, 241, 250, 0.8),
+      rgba(0, 171, 228, 0.8)
     ),
     url(../images/maintenance\ and\ repair.jpg);
   background-size: cover;
@@ -345,7 +346,7 @@ body {
 }
 
 .heading-primary {
-  color: var(--whiteColor);
+  color: var(--darkWord);
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -479,7 +480,7 @@ body {
 /* Caption section starts here  */
 
 .caption-bg-image{
-  background-image: linear-gradient(to right bottom, rgba(38, 172, 177, 0.6),rgba(46, 118, 169, 0.6)),url(../images/digital-marketing-bg.jpg);
+  background-image: linear-gradient(to right bottom, rgba(233, 241, 250, 0.6),rgba(0, 171, 228, 0.6)),url(../images/digital-marketing-bg.jpg);
   clip-path: polygon(0 14vh,100% 0,100% 85%,0 100%);
   -webkit-clip-path: polygon(0 14vh,100% 0,100% 85%,0 100%);
   position: relative;
@@ -513,6 +514,24 @@ top:40px;
 @supports 
   ((-webkit-text-stroke-color: #666)
   and
+  (-webkit-text-fill-color: var(--darkWord)))
+  or
+  ((-moz-text-stroke-color: #666)
+  and
+  (-moz-text-fill-color: var(--darkWord))) {
+  .heading-primary--main,.heading-primary--sub {
+       -moz-text-fill-color: var(--darkWord);
+    -webkit-text-fill-color: var(--darkWord);
+       -moz-text-stroke-color: #666;
+    -webkit-text-stroke-color: #666;
+       -moz-text-stroke-width: 1px;  
+    -webkit-text-stroke-width: 1px;
+  }
+}
+
+@supports 
+  ((-webkit-text-stroke-color: #666)
+  and
   (-webkit-text-fill-color: white))
   or
   ((-moz-text-stroke-color: #666)
@@ -539,7 +558,7 @@ top:40px;
 /* work-section in Home page  */
 .home-work-section{
   text-align: center;
-  background-image: linear-gradient(to right bottom, rgba(38, 172, 177, 0.6), rgba(38, 172, 177, 0.6)), url(../images/bg_maintenance.png);
+  background-image: linear-gradient(to right bottom, rgba(233, 241, 250, 0.6), rgba(233, 241, 250, 0.6)), url(../images/bg_maintenance.png);
   padding: 6% 0;
   font-size: 1.2rem;
   clip-path: polygon(0 13vh,100% 0,100% 85%,0 100%);
@@ -676,7 +695,7 @@ div.card-body a {
   line-height: 1;
 }
 .popup__close:hover {
-  color:var(--darkBlue);
+  color:var(--brightBlue);
 }
 
 .popup video{
@@ -691,7 +710,7 @@ div.card-body a {
 /* Team section Slick  */
 .home-team-section {
   text-align: center;
-  background-image: linear-gradient(to right bottom, rgba(38, 172, 177, 0.8), rgba(46, 118, 169, 0.8)), url(../images/bg1.png);
+  background-image: linear-gradient(to right bottom, rgba(233, 241, 250, 0.8), rgba(0, 171, 228, 0.8)), url(../images/bg1.png);
   padding: 5%;
   padding-top: 6%;
   font-size: 1.2rem;
@@ -745,9 +764,9 @@ color:#1a1a1a
     left top,
     right bottom,
     from(var(--lightBlue)),
-    to(var(--darkBlue))
+    to(var(--brightBlue))
   );
-  background-image: linear-gradient(to right bottom, rgba(38, 172, 177, 0.8), rgba(46, 118, 169, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(233, 241, 250, 0.8), rgba(0, 171, 228, 0.8));
   -webkit-clip-path: polygon(0 13vh, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 13vh, 100% 0, 100% 90%, 0 100%);
 }
@@ -923,7 +942,7 @@ color:#1a1a1a
 .footer-section {
   padding: 5% 2%;
   font-size: 1.7rem;
-  background-color: var(--darkBlue);
+  background-color: var(--brightBlue);
   -webkit-clip-path: polygon(0 12vh, 100% 0, 100% 90vh, 0 90vh);
   clip-path: polygon(0 12vh, 100% 0, 100% 90vh, 0 90vh);
   height: 90vh;
@@ -1035,10 +1054,10 @@ color:#1a1a1a
     linear,
     left top,
     right top,
-    from(var(--lightBlue)),
+    from(var(--brightBlue)),
     to(var(--darkBlue))
   );
-  background-image: linear-gradient(to right, rgba(38, 172, 177, 0.8), rgba(46, 118, 169, 0.8));
+  background-image: linear-gradient(to right, var(--brightBlue), var(--darkBlue));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -1175,7 +1194,7 @@ color:#1a1a1a
 
 /* contact Us Section  */
 .contact-us-section{
-  background: linear-gradient(180deg, var(--pinkish), #8B93FF22 60%);
+  background: linear-gradient(180deg, var(--brightBlue), #8B93FF22 60%);
   -webkit-clip-path: polygon(0 5vh, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 5vh, 100% 0, 100% 85%, 0 100%);
   padding:5% 0;
@@ -1196,11 +1215,15 @@ color:#1a1a1a
   width: 25%;
   height: auto;
 }
+.contact-text {
+  text-align: center;
+  font-size: 40px; 
+  font-weight: 800;
+}
 .contact-address-container div {
-  /* background-color: #ffd099; */
   width: 100%;
   height: auto;
-  background:linear-gradient(180deg, var(--darkBlue), #8B93FF55 80%);
+  background:linear-gradient(180deg, var(--brightBlue), #8B93FF55 80%);
   color: #1a1a1a;
   border-radius: 1rem;
   box-shadow: 0.3rem .3rem .7rem black;
@@ -1220,7 +1243,7 @@ color:#1a1a1a
   gap: 6%;
   width:35%;
   height: auto;
-  background:linear-gradient(180deg, var(--darkBlue), #8B93FF55 80%);
+  background:linear-gradient(180deg, var(--brightBlue), #8B93FF55 80%);
   border-radius: 0.6rem;
   box-shadow: .3rem .3rem .7rem black;
   padding: 3rem;
@@ -1258,7 +1281,7 @@ textarea {
   padding: 20rem 0;
   clip-path: polygon(0 10vh,100% 0,100% 95%,0 100%);
   -webkit-clip-path: polygon(0 10vh,100% 0,100% 95%,0 100%);
-  background: linear-gradient(180deg, var(--pinkish), #8B93FF22 60%);
+  background: linear-gradient(180deg, var(--brightBlue), #8B93FF22 60%);
 }
 
 .single-team-div-container{

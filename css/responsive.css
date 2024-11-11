@@ -1,8 +1,9 @@
-:root {
-  --darkBlue: #5755fe;
-  --whiteColor: white;
-  --lightBlue: #8b93ff;
-  --pinkish: #ff71cd;
+:root{
+  --darkBlue:#5755FE;
+  --brightBlue:#00ABE4;
+  --whiteColor:white;
+  --lightBlue:#E9F1FA;
+  --pinkish:#FF71CD;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* light-shade - #FFF7FC - rgb(255,247,252)
@@ -26,6 +27,11 @@ pink - #FF71CD - rgb(255,113,205) */
   .navigation__button {
     top: 3rem;
     right: 3rem;
+    height:5rem;
+    width:5rem;
+  }
+  .navigation__icon{
+    margin-top: 2.5rem;
   }
   .caption-div h1 {
     font-size: 3.5rem;
@@ -34,8 +40,13 @@ pink - #FF71CD - rgb(255,113,205) */
     margin-left: 3rem;
   }
   .navigation__background {
-    top: 3.5rem;
-    right: 3.5rem;
+    top: 3rem;
+    right: 3rem;
+    width:5rem;
+    height: 5rem;
+  }
+  .header__logo {
+    height: 3rem;
   }
 }
 @media (max-width: 40rem) {
