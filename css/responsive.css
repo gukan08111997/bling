@@ -92,6 +92,11 @@ pink - #FF71CD - rgb(255,113,205) */
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   }
+  .navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+  width: 2.5rem;
+}
 }
 @media only screen and (max-width: 37.5em) {
   .heading-primary--main {
@@ -401,8 +406,8 @@ pink - #FF71CD - rgb(255,113,205) */
     margin-top: 10px;
   }
   .section-stories {
-    clip-path: polygon(0 10vh, 100% 0, 100% 96%, 0 100%);
-    -webkit-clip-path: polygon(0 10vh, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 10vh, 100% 0, 100% 99.3%, 0 100%);
+    -webkit-clip-path: polygon(0 10vh, 100% 0, 100% 99.3%, 0 100%);
   }
 }
 
