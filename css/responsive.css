@@ -139,7 +139,7 @@ pink - #FF71CD - rgb(255,113,205) */
     height: 60vh;
   }
   .caption-section {
-    top: 70px;
+    top: 50px;
   }
 }
 @media (max-width: 80rem) {
@@ -221,11 +221,15 @@ pink - #FF71CD - rgb(255,113,205) */
 @media (max-width: 102.4rem) {
   .home-team-div {
     height: 60vh;
-    clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 90%);
-    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 90%);
+    clip-path: polygon(0 10%, 100% 0, 100% 72%, 0 90%);
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 72%, 0 90%);
   }
   .home-team-div h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .home-single-team-div-container img {
+    height:30vh;
   }
 }
 @media (max-width: 40rem) {
@@ -261,6 +265,9 @@ pink - #FF71CD - rgb(255,113,205) */
   .footer_copyright p {
     font-size: 1.5rem;
     text-align: center;
+  }
+  .carousel1{
+    perspective: 200px;
   }
 }
 
@@ -417,6 +424,10 @@ pink - #FF71CD - rgb(255,113,205) */
 @media (max-width: 102.4rem) {
   .single-team-div-container .img-div {
     width: 30rem;
+  }
+  .single-team-div-container img{
+    width:70%;
+    object-fit: scale-down;
   }
 }
 @media (max-width: 40rem) {
