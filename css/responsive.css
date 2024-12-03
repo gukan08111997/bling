@@ -29,6 +29,7 @@ pink - #FF71CD - rgb(255,113,205) */
     right: 3rem;
     height:5rem;
     width:5rem;
+    margin: 1rem;
   }
   .navigation__icon{
     margin-top: 2.5rem;
@@ -44,6 +45,7 @@ pink - #FF71CD - rgb(255,113,205) */
     right: 3rem;
     width:5rem;
     height: 5rem;
+    margin: 1rem;
   }
   .header__logo {
     height: 3rem;
@@ -89,8 +91,22 @@ pink - #FF71CD - rgb(255,113,205) */
 }
 @media only screen and (max-width: 37.5em) {
   .header {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+    height: 50vh;
+
+  }
+  .header .header__text-box > a.btn--animated, .header .header__text-box > a.btn--animated:visited {
+    padding: 0.5rem 3rem;
+    text-wrap: nowrap;
+    font-size: 1.1rem;
+  }
+  .heading-primary {
+    margin-bottom: 3rem;
+  }
+  .carousel1 figure img {
+    height: 20rem;
+    object-fit: fill;
   }
   .navigation__icon,
 .navigation__icon::before,
@@ -133,10 +149,10 @@ pink - #FF71CD - rgb(255,113,205) */
 /* caption section strats here  */
 @media (max-width: 102.4rem) {
   .caption-div h1 {
-    font-size: 7rem;
+    font-size: 5rem;
   }
   .caption-bg-image {
-    height: 60vh;
+    height: 100vh;
   }
   .caption-section {
     top: 50px;
@@ -144,12 +160,17 @@ pink - #FF71CD - rgb(255,113,205) */
 }
 @media (max-width: 80rem) {
   .caption-div h1 {
-    font-size: 5.5rem;
+    font-size: 4rem;
+  }
+  .caption-div h1 span {
+    font-size: 3rem;
+  }
+  .caption-bg-image {
+    height: 110vh;
   }
 }
 @media (max-width: 40rem) {
   .caption-div h1 {
-    margin-top: 50px;
     font-size: 4rem;
     font-family: "Poppins", sans-serif !important;
   }
@@ -194,7 +215,7 @@ pink - #FF71CD - rgb(255,113,205) */
   }
   .home-work-section > h2 {
     font-size: 3rem;
-    margin-top: 100px;
+    margin-top: 3.5rem;
   }
   .card-container {
     flex-flow: column nowrap;
@@ -235,7 +256,7 @@ pink - #FF71CD - rgb(255,113,205) */
 @media (max-width: 40rem) {
   .home-team-section > h2 {
     font-size: 3rem;
-    margin-top: 90px;
+    margin-top: 5rem;
   }
   .home-team-div {
     width: 100%;
@@ -258,16 +279,53 @@ pink - #FF71CD - rgb(255,113,205) */
     -webkit-clip-path: polygon(0 12vh, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 12vh, 100% 0, 100% 100%, 0 100%);
   }
+  .footer {
+    flex-direction: column;
+  }
+  .menu {
+    margin:0 !important;
+    padding:0 !important;
+  }
   .footer_links {
     flex-flow: column nowrap;
-    gap: 20px;
+    gap: 0;
   }
   .footer_copyright p {
     font-size: 1.5rem;
     text-align: center;
   }
+  .footer p {
+    font-size: 1rem;
+  }
+  .social-icon__item svg {
+    width:20px;
+    height:20px;
+  }
+  .footer_logo img {
+    width: 10rem;
+  }
+  .footer-section .menu__link {
+    margin: 0;
+    text-wrap: nowrap;
+  }
+  .foote .social-icon, .menu {
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
   .carousel1{
     perspective: 200px;
+  }
+}
+
+@media (max-width:80rem) {
+  .footer_logo img {
+    width: 10rem;
+  }
+  .footer p {
+    font-size: 1.3rem;
+  }
+  .menu {
+    margin: 1rem 0 2rem 4rem !important;
   }
 }
 
