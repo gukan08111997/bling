@@ -37,9 +37,6 @@ pink - #FF71CD - rgb(255,113,205) */
   .caption-div h1 {
     font-size: 3.5rem;
   }
-  .caption-div span {
-    margin-left: 3rem;
-  }
   .navigation__background {
     top: 3rem;
     right: 3rem;
@@ -152,7 +149,7 @@ pink - #FF71CD - rgb(255,113,205) */
     font-size: 5rem;
   }
   .caption-bg-image {
-    height: 100vh;
+    height: 40rem;
   }
   .caption-section {
     top: 50px;
@@ -166,7 +163,7 @@ pink - #FF71CD - rgb(255,113,205) */
     font-size: 3rem;
   }
   .caption-bg-image {
-    height: 110vh;
+    height: 33rem;
   }
 }
 @media (max-width: 40rem) {
@@ -174,6 +171,16 @@ pink - #FF71CD - rgb(255,113,205) */
     font-size: 4rem;
     font-family: "Poppins", sans-serif !important;
   }
+  .caption-div {
+    margin-top:3rem
+  }
+  .caption-bg-image {
+    height: 55rem;
+  }
+  #work-section .card-container a.btn--white {
+    padding: 1rem 2rem;
+  }
+  
 }
 
 /* caption section ends here  */
@@ -215,7 +222,7 @@ pink - #FF71CD - rgb(255,113,205) */
   }
   .home-work-section > h2 {
     font-size: 3rem;
-    margin-top: 3.5rem;
+    margin-top: 4rem;
   }
   .card-container {
     flex-flow: column nowrap;
@@ -234,6 +241,19 @@ pink - #FF71CD - rgb(255,113,205) */
   .popup__close:link,
   .popup__close:visited {
     z-index: 100;
+  }
+
+  .popup__content h2{
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+
+  .popup__content p,.popup__content li {
+    font-size: 1rem;
+  }
+
+  .footer_logo {
+    margin-top: 4rem !important;
   }
 }
 /* work section in home page ends here  */
