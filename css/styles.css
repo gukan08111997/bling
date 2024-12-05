@@ -334,6 +334,12 @@ color:#091057 !important;
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
+.navigation__checkbox~ .navigation__nav .navigation__link {
+  display:none;
+}
+.navigation__checkbox:checked~ .navigation__nav .navigation__link {
+  display:inline-block;
+}
 
 /* navigation section  ends here  */
 
