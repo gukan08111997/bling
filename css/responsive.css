@@ -241,6 +241,13 @@ pink - #FF71CD - rgb(255,113,205) */
   .popup__close:link,
   .popup__close:visited {
     z-index: 100;
+    top: 0;
+    right:0.3rem
+  }
+
+  .popup__content {
+    width: 90%;
+    padding:2rem;
   }
 
   .popup__content h2{
@@ -249,7 +256,7 @@ pink - #FF71CD - rgb(255,113,205) */
   }
 
   .popup__content p,.popup__content li {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .footer_logo {
@@ -434,7 +441,7 @@ pink - #FF71CD - rgb(255,113,205) */
 @media only screen and (max-width: 56.25em) {
   .row {
     max-width: 50rem;
-    padding: 0 3rem;
+    padding: 0 1rem;
   }
 }
 
@@ -453,8 +460,8 @@ pink - #FF71CD - rgb(255,113,205) */
 @media only screen and (max-width: 56.25em) {
   .story {
     width: 100%;
-    padding: 4rem;
-    padding-left: 7rem;
+    padding: 2rem;
+    padding-left: 4rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -475,8 +482,9 @@ pink - #FF71CD - rgb(255,113,205) */
 }
 @media only screen and (max-width: 37.5em) {
   .story__shape {
-    -webkit-transform: translateX(-3rem) skewX(0);
-    transform: translateX(-3rem) skewX(0);
+    -webkit-transform: translateX(2rem) skewX(0);
+    transform: translateX(2rem) skewX(0);
+    float:none;
   }
 }
 @media only screen and (max-width: 37.5em) {

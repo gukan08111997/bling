@@ -725,13 +725,14 @@ div.card-body a {
   }
 }
 .popup__content {
-  padding: 3rem;
+  padding: 2rem;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 75%;
+  max-height: 95%;
   background-color: #fff;
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
