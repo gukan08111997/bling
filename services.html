@@ -47,7 +47,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js
 
       <div class="navigation__background">&nbsp;</div>
 
-      <nav class="navigation__nav">
+      <nav class="navigation__nav d-none">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a href="index.html" class="navigation__link"
@@ -71,7 +71,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js
             >
           </li>
           <li class="navigation__item">
-            <a href="coming_soon.html" class="navigation__link"
+            <a href="faq.html" class="navigation__link"
               ><span>
                 <i class="fa-regular fa-circle-question"></i></span>FAQ</a
             >
@@ -473,6 +473,19 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js
           </div>
         </div>
       </div>
-
+      <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+      <script>
+        // navigation toggle functionality 
+      
+        $('#navi-toggle').on('click',function () {
+          setTimeout(()=>{
+            $('.navigation__nav').toggleClass('d-none');
+          },500)
+        })
+          </script>
   </body>
 </html>

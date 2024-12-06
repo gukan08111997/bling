@@ -387,6 +387,10 @@ pink - #FF71CD - rgb(255,113,205) */
     background-color: var(--boxBgColor);
     border-radius: 0.2rem;
     box-shadow: 3px 3px 7px black;
+    padding: 3rem 0;
+  }
+  .form-container textarea {
+    resize: none;
   }
   .form-container button {
     width: fit-content;
@@ -523,9 +527,15 @@ pink - #FF71CD - rgb(255,113,205) */
   }
 }
 
-/* work page starts here  */
+/* FAQ page starts here  */
 @media (max-width: 40rem) {
-  .gallery {
-    display: block;
+  .accordion-item .accordion-button {
+    font-size: 1.5rem;
+  }
+  .accordion-body {
+    font-size: 1.2rem;
+  }
+  .accordion-button {
+    padding:1.5rem;
   }
 }
