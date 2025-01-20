@@ -10,21 +10,12 @@ const message = document.getElementById("message");
 function sendMailFromContactPage() {
   let params = {
     from_name : `${fname.value} ${lname.value}`,
-    email_id : `${email2.value}`,
-    message : `${message.value}`
+    email_id : email2.value,
+    mobile:mobile2.value,
+    message : message.value
   }
-  emailjs.send("service_m6u86wd","template_hl57j3f",params).then((message) => {
-    if(message==="OK"){
-      Swal.fire({
-        title: "Good job!",
-        text: "Message sent successfully!",
-        icon: "success"
-      });
-      
-    }
-  });
-  const bodyMessage = `Full Name:${fname.value} ${lname.value}<br> Email:${email2.value}<br> Mobile Number:${mobile2.value}<br> Message:${message.value}`;
-}
+  emailjs.send("service_f1ocfrg","template_hl57j3f",params).then(alert('Message sent successfully.We will contact you shortly'));
+ }
 
 contactPageForm.addEventListener("submit", (e) => {
   e.preventDefault();

@@ -6,25 +6,13 @@ const email1 = document.getElementById("email1");
 const mobile1 = document.getElementById("mobile1");
 
 function sendMailFromHomePage() {
-  const bodyMessage = `Full Name:${fullName.value}<br> Email:${email1.value}<br> Mobile Number:${mobile1.value}<br> Message:please contact me`;
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "gukan08111997intelligent@gmail.com",
-    Password: "DFFBAC446036A6A2361732CB1C86B48B401F",
-    To: "gukan08111997intelligent@gmail.com",
-    From: "gukan08111997intelligent@gmail.com",
-    Subject: "This contact form information from BlingUAE site ",
-    Body: bodyMessage,
-  }).then((message) => {
-    if(message==="OK"){
-        Swal.fire({
-            title: "Good job!",
-            text: "Message sent successfully!",
-            icon: "success"
-          });
-         
-    }
-  });
+    let params = {
+    from_name:fullName.value,
+    mobile:mobile1.value,
+    email_id:email1.value,
+    message:"Please contact me. This message from Blinguae Website Homepage."
+  }
+  emailjs.send("service_f1ocfrg","template_hl57j3f",params).then(('Message sent successfully.We will contact you shortly'));
 }
 
 homePageForm.addEventListener("submit", (e) => {
