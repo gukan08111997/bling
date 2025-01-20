@@ -160,7 +160,7 @@ pink - #FF71CD - rgb(255,113,205) */
     font-size: 4rem;
   }
   .caption-div h1 span {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .caption-bg-image {
     height: 33rem;
@@ -168,14 +168,14 @@ pink - #FF71CD - rgb(255,113,205) */
 }
 @media (max-width: 40rem) {
   .caption-div h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: "Poppins", sans-serif !important;
   }
   .caption-div {
     margin-top:3rem
   }
   .caption-bg-image {
-    height: 55rem;
+    height: 35rem;
   }
   #work-section .card-container a.btn--white {
     padding: 1rem 2rem;
@@ -210,8 +210,8 @@ pink - #FF71CD - rgb(255,113,205) */
 }
 @media (max-width: 40rem) {
   .home-work-section {
-    clip-path: polygon(0 13vh, 100% 0, 100% 95%, 0 100%);
-    -webkit-clip-path: polygon(0 13vh, 100% 0, 100% 95%, 0 100%);
+    clip-path: polygon(0 10vh, 100% 0, 100% 95%, 0 100%);
+    -webkit-clip-path: polygon(0 10vh, 100% 0, 100% 95%, 0 100%);
   }
   .home-work-section > a.btn {
     margin-top: -90px;
@@ -303,8 +303,8 @@ pink - #FF71CD - rgb(255,113,205) */
 @media (max-width: 40rem) {
   .footer-section {
     height: fit-content;
-    -webkit-clip-path: polygon(0 12vh, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 12vh, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
   }
   .footer {
     flex-direction: column;
@@ -359,8 +359,8 @@ pink - #FF71CD - rgb(255,113,205) */
 /* contact us page - mobile responsiveness  */
 @media (max-width: 40rem) {
   .contact-us-section {
-    -webkit-clip-path: polygon(0 12vh, 100% 0, 100% 95%, 0 100%) !important;
-    clip-path: polygon(0 12vh, 100% 0, 100% 95%, 0 100%) !important;
+    -webkit-clip-path: polygon(0 10vh, 100% 0, 100% 95%, 0 100%) !important;
+    clip-path: polygon(0 10vh, 100% 0, 100% 95%, 0 100%) !important;
   }
   .contact-text {
     font-size: 2.5rem !important;
@@ -554,3 +554,21 @@ pink - #FF71CD - rgb(255,113,205) */
     padding:1.5rem;
   }
 }
+
+/* about us page */
+
+@media (max-width: 40rem) {
+  #our-services-section{
+    -webkit-clip-path: polygon(0 10vh, 100% 0, 100% 98%, 0 100%);
+    clip-path: polygon(0 10vh, 100% 0, 100% 98%, 0 100%);
+  }
+  #our-vision-section,#testimonial-section,#choose-us-section,#faq-section,#about-Us-section,#our-mission-section{
+    -webkit-clip-path: polygon(0 10vh, 100% 0, 100% 92%, 0 100%);
+    clip-path: polygon(0 10vh, 100% 0, 100% 92%, 0 100%);
+  }
+  #choose-us-section{
+    -webkit-clip-path: polygon(0 10vh, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 10vh, 100% 0, 100% 96%, 0 100%);
+  }
+}
+
