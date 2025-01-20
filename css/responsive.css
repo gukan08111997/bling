@@ -566,7 +566,7 @@ pink - #FF71CD - rgb(255,113,205) */
     -webkit-clip-path: polygon(0 10vh, 100% 0, 100% 92%, 0 100%);
     clip-path: polygon(0 10vh, 100% 0, 100% 92%, 0 100%);
   }
-  #choose-us-section{
+  #choose-us-section,#certificate-Us-section{
     -webkit-clip-path: polygon(0 10vh, 100% 0, 100% 96%, 0 100%);
     clip-path: polygon(0 10vh, 100% 0, 100% 96%, 0 100%);
   }
