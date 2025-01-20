@@ -10,7 +10,7 @@ grey - rgba(245,245,245,1.00) */
 
 :root{
   --darkBlue:#5755FE;
-  --brightBlue:#00ABE4;
+  --brightBlue:#0045ff;
   --whiteColor:white;
   --lightBlue:#E9F1FA;
   --pinkish:#FF71CD;
@@ -1203,6 +1203,217 @@ color:#1a1a1a
   border-radius: 10px;
   height:5px;
   background:var(--pinkish);
+}
+
+/* About Us Page  */
+/* About Us section Starts here  */
+#about-Us-section,#our-vision-section,#our-mission-section,#our-services-section, #testimonial-section, #choose-us-section {
+  padding: 15rem 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(var(--lightBlue)),
+    to(var(--brightBlue))
+  );
+  background-image: linear-gradient(to right bottom, rgba(233, 241, 250, 0.8), rgba(0, 171, 228, 0.8));
+  -webkit-clip-path: polygon(0 13vh, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 13vh, 100% 0, 100% 90%, 0 100%);
+}
+
+#about-Us-section h2,#our-vision-section h2,#our-mission-section h2,#our-services-section h2, #testimonial-section .section-title h2, #choose-us-section .section-title h2 {
+  font-size: 5rem;
+}
+#about-Us-section p, #our-vision-section p,#our-mission-section p {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  #about-Us-section, #our-vision-section,#our-mission-section {
+    padding: 10rem 0;
+  }
+}
+.about_div,.vision_div,.mission_div {
+  width: 80%;
+  background-color: var(--brightBlue);
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+}
+.about_content_div > div,.vision_content_div > div,.mission_content_div > div {
+  padding : 5rem;
+}
+
+@media screen and (max-width : 25rem) {
+  .about_content_div > div,.vision_content_div > div,.mission_content_div > div {
+    padding : 3rem;
+  }
+  #about-Us-section > div, #our-mission-section > div, #our-vision-section > div {
+    position: relative;
+  }
+  #about-Us-section h2,#our-vision-section h2,#our-mission-section h2,#our-services-section h2, #testimonial-section .section-title h2, #choose-us-section .section-title h2 {
+    font-size: 3rem;
+  }
+  #about-Us-section p, #our-vision-section p,#our-mission-section p {
+    font-size: 1.5rem;
+  }
+  #about-Us-section .icon_div, #our-mission-section .icon_div,#our-vision-section .icon_div {
+    top: -2rem;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+.icon_div {
+  width: 15%;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  box-shadow: 1rem 1rem 3rem #777;
+}
+.icon_div img {
+  width: 100%;
+}
+
+#about-Us-section .icon_div, #our-mission-section .icon_div {
+  right: 2rem;
+}
+#our-vision-section .icon_div {
+  left: 2rem;
+}
+
+/* About Us Services section starts */
+
+.service-img-div img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+}
+.single-service {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.service-info {
+  padding: 2rem 1rem;
+  max-width: 20rem;
+}
+.service-icons {
+  padding: 0.5rem;
+}
+#our-services-section div.row>div{
+  margin-right: 0;
+}
+.service-info h4 {
+  font-size: 2rem;
+}
+.service-info h6 {
+  font-size: 1.3rem;
+}
+#our-services-section a i {
+  color: var(--darkWord)
+}
+
+/* Testimonial secdtion in about page  */
+
+.testimonial-div,.testimonial-author{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.testimonial-div .item {
+  flex-basis: calc(95%/3);
+}
+.testimonial-div .testimonial-author {
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-left: 4rem;
+}
+.testimonial-div .testimonial-author .media-left img {
+  background-color: #fff;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.testimonial-div .testimonial-author .media-body h6 {
+  font-size: 2.5rem;
+}
+.single-testimonial-inner > p:after {
+  content: "";
+  position: absolute;
+  height: 2.5rem;
+  bottom: -2.5rem;
+  left: 50px;
+  border-top: solid 2.5rem #fff;
+  border-left: solid 2.5rem transparent;
+  border-right: solid 2.5rem transparent;
+}
+
+.single-testimonial-inner > p {
+  background-color: #fff;
+  font-size: 16px;
+  padding: 38px 30px;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 32px;
+  min-height: 30rem;
+}
+
+.single-testimonial-inner > p > strong {
+  display: block;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.single-testimonial-inner {
+  position: relative;
+}
+.single-testimonial-inner .testimonial-quote {
+  position: absolute;
+  z-index: 10;
+  top: -2.5rem;
+  left: 1rem;
+}
+.single-testimonial-inner .testimonial-quote i {
+  font-size: 7rem;
+}
+
+/* choose section  */
+
+.choose-div {
+  gap: 3rem;
+}
+
+.single-choose-div {
+  width:35rem;
+  height:20rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.single-choose-div div {
+  border-radius: 1rem;
+  width:75%;
+  height: 50%;
+  background-color: var(--brightBlue);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.single-choose-div div p {
+ padding: 0.5rem;
+ text-align: center;
+ width: 100%;
+ font-size: 2.5rem;
+ font-weight: 600;
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 /* services page  */

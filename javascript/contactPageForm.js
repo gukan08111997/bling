@@ -8,16 +8,12 @@ const mobile2 = document.getElementById("mobile2");
 const message = document.getElementById("message");
 
 function sendMailFromContactPage() {
-  const bodyMessage = `Full Name:${fname.value} ${lname.value}<br> Email:${email2.value}<br> Mobile Number:${mobile2.value}<br> Message:${message.value}`;
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "gukan08111997intelligent@gmail.com",
-    Password: "DFFBAC446036A6A2361732CB1C86B48B401F",
-    To: "gukan08111997intelligent@gmail.com",
-    From: "gukan08111997intelligent@gmail.com",
-    Subject: "This contact form information from brand Maker site ",
-    Body: bodyMessage,
-  }).then((message) => {
+  let params = {
+    from_name : `${fname.value} ${lname.value}`,
+    email_id : `${email2.value}`,
+    message : `${message.value}`
+  }
+  emailjs.send("service_m6u86wd","template_hl57j3f",params).then((message) => {
     if(message==="OK"){
       Swal.fire({
         title: "Good job!",
@@ -27,6 +23,7 @@ function sendMailFromContactPage() {
       
     }
   });
+  const bodyMessage = `Full Name:${fname.value} ${lname.value}<br> Email:${email2.value}<br> Mobile Number:${mobile2.value}<br> Message:${message.value}`;
 }
 
 contactPageForm.addEventListener("submit", (e) => {

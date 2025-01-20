@@ -13,7 +13,7 @@ function sendMailFromHomePage() {
     Password: "DFFBAC446036A6A2361732CB1C86B48B401F",
     To: "gukan08111997intelligent@gmail.com",
     From: "gukan08111997intelligent@gmail.com",
-    Subject: "This contact form information from brand Maker site ",
+    Subject: "This contact form information from BlingUAE site ",
     Body: bodyMessage,
   }).then((message) => {
     if(message==="OK"){

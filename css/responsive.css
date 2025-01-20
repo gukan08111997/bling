@@ -508,6 +508,21 @@ pink - #FF71CD - rgb(255,113,205) */
   }
 }
 
+/* testimonials section  */
+@media screen and (max-width:62rem) {
+  .testimonial-div {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .testimonial-div .item {
+    flex-basis: 90%;
+    min-height: 17rem;
+  }
+  .testimonial-div p {
+    min-height: 17rem;
+  }
+}
+
 /* services section ends here  */
 
 /* branding page starts here  */
